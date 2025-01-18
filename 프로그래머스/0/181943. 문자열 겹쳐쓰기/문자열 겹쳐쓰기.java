@@ -8,12 +8,7 @@ class Solution {
         String frontMyStr = my_string.substring(0,s);
         String backMyStr = my_string.substring(s+osLen);
         
-        if(msLen > osLen + s) {
-            answer = frontMyStr.concat(overwrite_string).concat(backMyStr);
-               
-        } else {
-            answer = frontMyStr.concat(overwrite_string);   
-        }
+        answer = frontMyStr.concat(overwrite_string).concat(backMyStr);   
         
         return answer;
     }
